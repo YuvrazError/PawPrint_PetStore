@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pet Management Store - Checkout</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		Pet Management Store
+	</header>
+	<nav>
+		<ul>
+			<a href="index.html">Home</a>
+			<a href="Products.html">Featured Products</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="cart-items.html">Cart</a>
+			<a href="login.html">Logout</a>
+		</ul>
+	</nav>
+
+	<section>
+		<div>
+			<h1>Checkout Information</h1>
+			<table border="1" class="checkout-table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>($) Price</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="cart-items">
+
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section>
+		<div>
+			<h1>Buyer Information</h1>
+			<form method="post" action="https://formspree.io/f/xgebbopd" id="buyer-form">
+				<input required type="text" placeholder="Your name" name="name" id=""><br>
+				<input required type="text" placeholder="Your address" name="address" id=""><br>
+				<input required type="email" placeholder="Your email" name="email" id=""><br>
+				<input required type="tel" placeholder="Your phone no." name="phone" id=""><br>
+				<article class="checkout-button-section p-0">
+					<button class="add-to-cart-button flexbox">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+						</svg>
+						Checkout Now</button>
+				</article>
+			</form>
+		</div>
+	</section>
+
+
+	<script src="./scripts/cart.js"></script>
+	<script src="./scripts/final-checkout.js"></script>
+</body>
+
+</html>

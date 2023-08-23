@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bird Accessories - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    Bird Accessories - Products
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Featured Products</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="cart-items.html">Cart</a>
+    <a href="login.html">Logout</a>
+  </nav>
+
+  <div style="display:flex; justify-content:center;">
+    <h1>Bird Accessories</h1>
+  </div>
+  <section>
+    <div class="product">
+      <img src="images/birdaccessory1.jpg" alt="Product 1" sizes="300px">
+      <h3>Bird Accessories 1</h3>
+      <h3>Limited Stock</h3>
+      <p>Pedigree Petfoods is a subsidiary of the American group Mars, Incorporated specializing in pet food, with
+        factories in England at Melton Mowbray and Birstall, Leeds; and offices at McLean, Virginia. </p>
+      </br>
+      <p>Price: $19.99</p>
+      <input min="1" max="50" value="1" type="number">
+      <button class="add-to-cart-button" onclick="addToCart('Bird Accessories 1','19.99', this)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/birdaccessory2.jpg" alt="Product 2">
+      <h3>Bird Accessory 2</h3>
+      <h3>3 in Stock</h3>
+      <p>Each Prestige formula has been developed to give your dog an optimum diet that is nutritious, perfectly
+        balanced and highly palatable. Ingredients: Dried animal proteins (23% min). Wheat Peas Linseed Animal fat.</p>
+      </br>
+      <p>Price: $24.99</p>
+      <input min="1" max="50" value="1" type="number">
+      <button class="add-to-cart-button" onclick="addToCart('Bird Accessory 2','24.99', this)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/birdaccessory3.jpg" alt="Product 3">
+      <h3>Bird Accessory 3</h3>
+      <h3>5 in Stock</h3>
+      <p>InterNutri Vigor Cat Fish & Rice Dry Catfood is the Complete & Balanced Nutrition for Your Pets. As Made in
+        Portugal, InterNutri Maintains Pure European standard quality for your pet cat and fulfil its nutritional
+        demand.</p>
+      </br>
+      <p>Price: $18.00</p>
+      <input min="1" max="50" value="1" type="number">
+      <button class="add-to-cart-button" onclick="addToCart('Bird Accessory 3','18.00', this)">Add to Cart</button>
+
+    </div>
+  </section>
+  <footer>
+    &copy; 2023 Pet Management Store. All rights reserved.
+  </footer>
+  <script src="./scripts/checkout.js"></script>
+</body>
+
+</html>

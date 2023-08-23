@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pet Management Store - Cart</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+	<body>
+		<header>
+			Pet Management Store
+		</header>
+		<nav>
+			<ul>
+				<a href="index.html">Home</a>
+				<a href="Products.html">Featured Products</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="cart-items.html">Cart</a>
+				<a href="login.html">Logout</a>
+			</ul>
+
+		</nav>
+
+		<body>
+			<div class="cart-details">
+				<h1>Cart Items</h1>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>($) Price</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody id="cart-items">
+
+					</tbody>
+				</table>
+				<p id="cart-status">Currently, there is no product into the cart! <a style="text-decoration: underline;"
+						href="/">Add Now</a></p>
+				<div id="cart-action-buttons" class="checkout-button-section">
+					<span onclick="clearCart();">Clear Cart</span>
+					<a href="checkout.html" class="checkout-btn">Checkout</a>
+				</div>
+			</div>
+
+			<script src="./scripts/cart.js"></script>
+			<script>
+				const cartStatus = document.getElementById("cart-status");
+				const cartActionButtons = document.getElementById("cart-action-buttons");
+
+				if(localStorage.length <= 0) {
+					cartStatus.style.display = "block";
+					cartActionButtons.style.display = "none"
+				} else {
+					cartStatus.style.display = "none";
+					cartActionButtons.style.display = "block"
+				}
+			</script>
+		</body>
+
+</html>
